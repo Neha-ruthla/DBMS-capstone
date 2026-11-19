@@ -1,0 +1,141 @@
+
+.analytics-page {
+  width: 100%;
+  min-width: 0;
+  padding-bottom: 30px;
+  color: #f4f3ff;
+}
+
+.analytics-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin: 5px 0 28px;
+  padding: 25px 28px;
+  border: 1px solid rgba(170,150,255,.2);
+  border-radius: 17px;
+  background: linear-gradient(120deg,#211a3d,#15182d 65%,#102b38);
+}
+
+.analytics-eyebrow {
+  color: #a98aff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.analytics-heading h2 {
+  color: white;
+  font-size: 27px;
+  margin: 8px 0;
+}
+
+.analytics-heading > div:first-child > p:last-child,
+.analytics-card > p {
+  color: #9291aa;
+  font-size: 12px;
+}
+
+.analytics-total {
+  min-width: 145px;
+  padding: 17px 22px;
+  border: 1px solid rgba(170,150,255,.23);
+  border-radius: 13px;
+  background: rgba(155,114,255,.1);
+  text-align: center;
+}
+
+.analytics-total span {
+  display: block;
+  color: #aaa9c0;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.analytics-total strong {
+  display: block;
+  font-size: 32px;
+  font-weight: 900;
+  color: #43dce5;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.analytics-card {
+  min-width: 0;
+  min-height: 340px;
+  padding: 23px;
+  border: 1px solid rgba(170,150,255,.18);
+  border-radius: 16px;
+  background: linear-gradient(145deg,#191a31,#101220);
+  box-shadow: 0 9px 30px rgba(0,0,0,.15);
+}
+
+.analytics-card h3 {
+  color: #f3f0ff;
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.analytics-card > p {
+  margin-bottom: 18px;
+}
+
+.analytics-card.analytics-wide {
+  grid-column: span 2;
+  min-height: 370px;
+}
+
+.analytics-card > .analytics-total {
+  margin: 30px auto 0;
+  width: 180px;
+  min-height: 125px;
+}
+
+.analytics-card > .analytics-total strong {
+  font-size: 43px;
+}
+
+.analytics-empty {
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9291aa;
+  font-size: 12px;
+  text-align: center;
+}
+
+.analytics-message {
+  padding: 30px;
+  color: #ddd;
+  text-align: center;
+  background: #17182d;
+  border: 1px solid rgba(170,150,255,.2);
+  border-radius: 16px;
+}
+
+@media(max-width:650px) {
+  .analytics-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .analytics-total {
+    width: 100%;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-card.analytics-wide {
+    grid-column: span 1;
+  }
+}
