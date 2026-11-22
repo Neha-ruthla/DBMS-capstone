@@ -58,7 +58,7 @@ CampusConnect/
 ├── .env.example
 ├── .gitignore
 ├── README.md
-├── README_SETUP.md
+|
 └── frontend/
     ├── index.html
     ├── package.json
